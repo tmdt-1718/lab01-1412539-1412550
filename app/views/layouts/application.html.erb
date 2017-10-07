@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class = "navbar navbar-expand-lg  navbar-light bg-light nav-cusomize-color ">
+      <a href = "/" class="navbar-brand">TT</a>
+      <button class="navbar-toggler" data-toggle = "collapse"
+      data-target = "#collapsableContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id = "collapsableContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/" >Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/photos" >Albums</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/articles" >Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about" >About us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class  =" newContainer">
+      <div class="row">
+        <div class="col-sm-3">
+          <a class="nav-link">MENU</a>
+          <a class="nav-link" href="/" >Home</a>
+          <a class="nav-link" href="/photos" >Albums</a>
+          <a class="nav-link" href="/articles" >Blogs</a>
+          <a class="nav-link" href="/about" >About us</a>
+        </div>
+        <div class="col-sm-9">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+<div class = "footer">
+  Copyright 2017 by Minh Tien Tran & Hong Thuan Tran. All rights reserved.
+</div>
+  </body>
+</html>

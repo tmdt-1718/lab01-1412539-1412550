@@ -1,0 +1,7 @@
+<h1>Blogs</h1>
+<%= @articles.count %> articles
+<table>
+<% @articles.each do |article| %>
+  <%= render partial: "thumbnail", locals: {a: article} %>
+<% end %>
+</table>

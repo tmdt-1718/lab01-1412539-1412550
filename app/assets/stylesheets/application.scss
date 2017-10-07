@@ -1,0 +1,29 @@
+@import "bootstrap";
+@import "_variables";
+@import "photos";
+@import "articles";
+
+.nav-cusomize-color{
+  background-color: gray !important;
+}
+
+.footer{
+  background-color: RGBA(194,194,194,0.84);
+  color: RGBA(136,136,136,0.48);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.newContainer{
+  @extend .container;
+  padding-bottom: 40px;
+  height: calc(100% - 60px);
+}
+html{
+  min-height:100%;
+}
+body{
+  min-height: 100%;
+}
