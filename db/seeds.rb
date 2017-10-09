@@ -14,17 +14,9 @@ Comment.delete_all
 (1..10).each do |user_num|
   user = User.create!(name:Faker::Name.name)
   (1..10).each do |article_num|
-    article = user.articles.create!(title: Faker::Lorem.sentence, body:Faker::Lorem.paragraphs(2), user_id: 1)
+    article = user.articles.create!(title: Faker::Lorem.sentence, body:Faker::Lorem.paragraph(10), user_id: 1)
     (1..5).each do |cmt_num|
       article.comments.create!(body: Faker::Lorem.paragraph, user_id: user.id)
     end
   end
 end
-
-
-
-
-
-
-#Article.create!(title: 'title 1', body: 'body 1', user_id: 1)
-#Article.create!(title: 'title 2', body: 'body 2', user_id: 1)

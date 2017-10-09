@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-md-12">
+    <%= form_for @article, method: :put do |f| %>
+    <div class="form-group">
+      <label>Title</label>
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <label>Body</label>
+      <%= f.text_area :body, class: 'form-control' %>
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      <%= fa_icon "save" %>
+      Save
+    </button>
+    <button type="back" class='btn btn-primary'>
+      <%= fa_icon "chevron-circle-left" %>
+      Back
+    </button>
+
+    <% end %>
+  </div>
+</div>

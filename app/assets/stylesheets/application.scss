@@ -2,14 +2,15 @@
 @import "_variables";
 @import "photos";
 @import "articles";
+@import "font-awesome";
 
 .nav-cusomize-color{
-  background-color: gray !important;
+  background-color: RGBA(167,167,167,0.7);
 }
 
 .footer{
-  background-color: RGBA(194,194,194,0.84);
-  color: RGBA(136,136,136,0.48);
+  background-color: RGBA(0,123,255,0.5);
+  color: RGBA(256,256,256,0.8);
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;

@@ -1,4 +1,10 @@
 .article-thumbnail{
   @extend .card;
   margin-bottom: 10px;
+  .card-text{
+    // width: 100%;
+    // white-space: nowrap;
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+  }
 }

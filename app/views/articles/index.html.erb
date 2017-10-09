@@ -1,7 +1,12 @@
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="/">Home</a></li>
+  <li class="breadcrumb-item active">Blogs</li>
+</ol>
 <h1>Blogs</h1>
-<%= @articles.count %> articles
+<%= @articles.count %>
+articles
 <table>
-<% @articles.each do |article| %>
+  <% @articles.each do |article| %>
   <%= render partial: "thumbnail", locals: {a: article} %>
-<% end %>
+  <% end %>
 </table>
